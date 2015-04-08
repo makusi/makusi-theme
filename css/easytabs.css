@@ -1,0 +1,47 @@
+/* 
+    Document   : easytabs
+    Created on : May 2, 2014, 9:35:17 PM
+    Author     : juan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* Easy Tabs */
+.etabs { margin: 0; padding: 0; }
+.tab{
+	display: inline-block;
+	zoom:1;
+	*display:inline;
+	border-bottom:none;
+	}
+	
+li.tab{
+	border-bottom:none;
+	padding-bottom:0px;
+	margin-bottom:0px;
+	/*border:1px solid #f8f8f8;*/
+	border-bottom:none;
+	text-align:center;
+	margin:0px;
+	}
+
+.tab a {
+	font-size: 14px;
+	display: block;
+	outline: none;
+	padding:22px 15px;
+	text-transform:uppercase;
+	font-weight:bold
+	}
+.tab a:hover {
+    color:#efefef !important;
+}
+.tab.active a{
+    color:#7FBAD6;
+}
+.tab i{ margin-left:5px; }
+
+.tab.active { padding-top:0px; position: relative; background:#fff }
+
+.tab-content{ background:#6EA9C5; border-top:none; padding:17px;}
+

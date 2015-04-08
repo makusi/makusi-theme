@@ -1,0 +1,15 @@
+.search-container{
+    background:white;
+    margin-bottom:20px;
+}
+.search-container h2{
+    margin-top:10px;
+}
+
+.search-container h1{
+    text-align:center;
+    font-size: 2.2em !important;
+    font-weight: lighter !important;
+    line-height: 2.2em !important;
+    margin-top:0 !important;
+}

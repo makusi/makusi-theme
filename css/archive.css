@@ -1,0 +1,48 @@
+/* ARCHIVE */
+
+.archive-wrapper{
+	background:white;
+	margin-bottom: 10px;
+}
+
+.archive-wrapper .content{
+    margin-top:10px !important;
+}
+
+.archive-wrapper aside{
+    margin-top:30px !important;
+}
+
+.archive-wrapper .content h2{
+    text-align:center;
+    font-weight:lighter;
+    font-size:2.2em;
+    margin-top:0;
+    line-height:2.2em;
+}
+
+
+.video_latest_archive_item{ 
+    margin-bottom:40px; 
+}
+.video_latest_archive_item p, .video_latest_archive_item h6 {
+    padding-left:5px;
+    padding-right:5px;
+}
+.video_latest_archive_item .video-duration{
+    bottom:10px;
+    right:0px;
+    font-size:1.2em;
+    padding:15px;
+}
+
+.video_latest_archive_item .stats{
+    width:105px;
+    margin-right:20px;
+    float:right;
+    
+}
+
+.video_latest_archive_item .stats li{
+    padding-top:4px;
+}

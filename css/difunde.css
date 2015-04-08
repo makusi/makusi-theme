@@ -1,0 +1,66 @@
+/* Fomulario http://www.tube.eguzkibideoak.info/hosting/new-post/ Dos columnas */
+
+ul.wpuf-form {
+clear: both;
+}
+
+ul.wpuf-form li .wpuf-fields {
+float: none;
+width: 100%;
+}
+ul.wpuf-form li .wpuf-label {
+float: none;
+width: 100%;
+}
+ul.wpuf-form li{
+padding: 0;
+clear: left;
+float: left;
+width: 40%;
+}
+ul.wpuf-form li.columna-dos{
+padding: 0;
+clear: right;
+float: right;
+width: 40%;
+}
+
+ul.wpuf-form li.file{
+float: none;
+width: 100%;
+}
+
+ul.wpuf-form li.post_title input, ul.wpuf-form li.post_excerpt textarea{
+width: 90%;
+padding: 5px;
+}
+ul.wpuf-form li .wpuf-label{
+clear: both;
+float: none;
+padding: none;
+}
+ul.wpuf-form li .wpuf-fields label{
+float: left;
+margin: 5px;
+}
+ul.wpuf-form li:{
+padding: 0;
+float: left;
+width: 50%;
+}
+ul.wpuf-form li.wpuf-submit{
+clear: both;
+float: left;
+}
+ul.wpuf-form .wpuf-submit input[type="submit"]{
+font-size: 22px;
+padding: 10px;
+}
+ul.wpuf-form li:after {
+    clear: none;
+    display: inherit;
+}
+
+.difusion{
+background: #eee;
+}

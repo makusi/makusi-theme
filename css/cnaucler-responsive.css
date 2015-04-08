@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-oct-2014, 18:59:14
+    Author     : eguzki
+
+
+*/
+
+@media only screen and (min-width : 1200px) {
+    
+}
+
+@media (min-width: 1024px) and (max-width : 1199px) {
+
+}
+
+@media (min-width: 992px) and (max-width : 1023px) {
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+}
+
+@media only screen and (min-width : 600px) and (max-width : 767px) {
+
+}
+
+@media only screen and (min-width : 480px) and (max-width : 599px) {
+
+}
+
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+}
+
+/*iPad horizontal specific styles */
+@media only screen and (width : 1024px) and (orientation : landscape) {
+
+}
+
+
+/*Droid horizontal specific styles*/
+@media only screen and (width : 854px) and (orientation : landscape) {}
+
+/*iPad vertical specific styles*/
+@media only screen and (width : 768px) and (orientation : portrait) {}
+
+/*iPhone horizontal, Droid vertical, Torch horizontal specific styles*/
+@media only screen and (width : 480px) and (orientation : landscape) {}
+
+/*Torch vertical specific styles*/
+@media only screen and (width : 360px) and (orientation : portrait) {}
+
+/*iPhone vertical, Blackberry Curve specific styles*/
+@media only screen and (width : 320px) and (orientation : portrait) {}
+
+/*iPhone 4 specific styles (retina display)*/
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {}

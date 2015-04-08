@@ -1,0 +1,551 @@
+/**
+ CSS OVERRIDES
+ cnaucler
+ ATENCIÓN!!! Esta hoja de estilos está hecha para alterar el aspecto de la web SIN HACER CAMBIOS
+ EN EL HTML. He visto que el HTML tiene algunas inconsistencias entre páginas, como asignar clases
+ diferentes a cajas que cumplen la misma función. Por eso en esta css ha habido que tener en cuenta 
+ esos casos, y duplicar reglas.
+*/
+
+/* ============================================================================================== */
+/* CAJAS Y CONTENEDORES */
+/* ============================================================================================== */
+body{
+	/*background-color:#FBFBFB;
+	/*background-image:none;
+	background-image: url("http://subtlepatterns.com/patterns/swirl_pattern.png");*/
+}
+.body-container{					/* contenedor principal, entre la cabecera y el footer */
+	background-color:#FFF;
+	margin-top:0;
+	padding-top:20px;
+}
+.formwrapper {						/* div que engloba algunos de los formularios */
+  box-shadow: none !important;
+  padding: 0;
+}
+#tabs{								/* contenedor de las pestañas */
+	background:#FFF;
+	padding:0;
+	border:0;
+}
+.widget-item {						/* caja contenedora de los cuadros laterales */
+	border-radius: 0 !important;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+}
+.fullwidth{
+	margin-bottom:0;	/* no queremos que haya ningún espacio entre el carrusel y cuerpo de la home */
+}
+.single-wrapper{
+	box-shadow:none;	/* eliminamos el efecto sombra de esta caja (pág. detalle video) */
+}
+/* ============================================================================================== */
+
+
+
+/* ============================================================================================== */
+/* TIPOGRAFÍA */
+/*
+En principio vamos a poner todos los tamaños tipográficos en pixels, hasta lograr la coherencia
+buscada. A partir de ahí se irán poniendo en .em para las distintas páginas.
+El problema es que hay cajas de los contenidos principales que no tienen el mismo nombre de clase
+en unas páginas y otras. Por ejempplo, en la página de perfil de autor la caja tiene la clase
+.content_author, mientras que en otras es simplemente .content. Y en algunos casos, tienen distintos
+tamaños de fuente para textos y títulos
+*/
+/* ============================================================================================== */
+.content, .content-single, .content_author, .entry-content{
+	/* en algunas páginas el texto normal no está en etiquetas <p> */
+	font-size:1.2em;
+	color:#666;
+	line-height:1.4em;
+}
+.content p, .content-single p, .content_author p, .entry-content p{
+	font-size:1em;
+	color:#666;
+	line-height:1.5em;
+}
+.content label, .content-single label, .content_author label, .entry-content label{
+	font-size:1.2em;
+	color:#666;
+	line-height:1.4em;
+}
+.content h1, .content-single h1, .content_author h1, .entry-content h1, 
+.content h2, .content-single h2, .content_author h2, .entry-content h2
+{
+	/* Los tamaños de h1 y h2 no eran consistentes: en algunas páginas el h2 era mayor que el h1,
+	así que los he unificado */
+	font-size:1.4em;
+	/*border-bottom:1px solid #EEE;*/
+	color:#246280;
+	margin-bottom:14px;
+}
+.content a, .content-single a, .content_author a, .entry-content a{
+	color:#6EA9C5;
+}
+.content a:hover, .content-single a:hover, .content_author a:hover, .entry-content a:hover{
+	color:#246280;
+}
+.single-tags ul li{
+	padding:0;
+	background-color:none;
+}
+.single-tags ul li a{
+	font-size:13px; font-weight:normal;
+	padding:8px 10px !important;
+	background-color:#EFEFEF;
+}
+.single-tags ul li a:hover{
+	color:#FFF;
+	background-color:#6EA9C5;
+}
+.video_screen_item > p.video-description{
+	font-size:1.2em;
+}
+/* ============================================================================================== */
+
+
+
+/* ============================================================================================== */
+/* CABECERA Y MENÚ SUPERIOR */
+/* ============================================================================================== */
+.header .container{
+	padding:0 28px !important;
+}
+body > header{
+	position:relative;
+	z-index:1000 !important;
+}
+.blue-background-wrapper{
+	box-shadow:0 1px 5px #000;
+}
+.fullwidth footer{
+	position:relative;
+	z-index:1001 !important;
+	box-shadow:0 1px 5px #000;
+}
+.upload-link-wrapper, .register-link-wrapper, .login-link-wrapper{
+	margin-top:0; margin-left:2px;
+	/*height:59px;*/
+	line-height:40px;
+	border-radius:0 !important;
+	/* padding-bottom:0; padding-top:0; */
+}
+/* ============================================================================================== */
+
+
+
+/* ============================================================================================== */
+/* HOME */
+/* ============================================================================================== */
+/* Estilos para el paginador. Para la home, listado de videos y resultados de la búsqueda */
+.page-numbers, .page-numbers.current {
+	width:36px; height:36px; line-height:36px;
+	float:none; display:inline-block;
+	padding-top:0; margin-right:4px;
+}
+.page-numbers.current {
+	background-color: #246280; color: white; font-weight: bold;
+}
+a:hover.page-numbers{
+	background-color: #CCC;	color: white; 
+}
+/* Estilos para las cajas de los videos de la home */
+.video_latest_item, .video_feature_item, .video_latest_archive_item{
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.15) !important;
+}
+.video_latest_item:hover, .video_feature_item:hover, .video_latest_archive_item:hover{
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important; background-color:#FFF;
+}
+.video_latest_item:hover h6, .video_feature_item:hover h6, .video_latest_archive_item:hover h6{
+	background-color:#6EA9C5;
+}
+.video_latest_item:hover a, .video_feature_item:hover a, .video_latest_archive_item:hover a{
+	color:#FFF;
+}
+.video_latest_item, .video_feature_item, .video_latest_archive_item {
+	padding:0px;
+	border-top:none;
+}
+div .video_feature_item .image-holder{
+	margin-bottom:0 !important;
+}
+.video_latest_item h6, .video_feature_item h6{
+	margin-top:0; margin-bottom:0; padding-bottom:5px; padding-top:5px;
+}
+.video_latest_item p, .video_feature_item p{
+	border-top:1px solid #DDD;
+        margin-left:2px;
+        margin-right:2px;
+}
+/* Estilos para la caja del video destacado */
+#slideshow 
+{overflow:visible !important;}
+/* ============================================================================================== */
+
+
+
+/* ============================================================================================== */
+/* FORMULARIOS Y PESTAÑAS */
+/*
+Los formularios no eran consistentes, cada uno era de un padre (Bootstrap, jQuery UI, propios...)
+Se han unificado bajo un criterio común
+*/
+/* ============================================================================================== */
+
+input[type=text].field_missing{
+    background-color: #f2b0ce !important;
+}
+
+.searchvideo, input[type=text], input[type=password], input[type=email], textarea{
+	/* Reformateamos los campos de texto, de contraseña y textareas */
+	border-radius:0 !important;
+	border-width:1px !important;
+	border-color:#6EA9C5 !important;
+	font-size:14px !important;
+	border-style: solid !important;
+	width:100% !important;
+	background-color:#F5F5F5 !important;
+	box-shadow:none !important;
+	-webkit-transition: background-color 0.5s, border-color 0.5s;
+	transition: background-color 0.5s, border-color 0.5s;
+	padding:10px !important;
+	height:auto !important;
+}
+.searchvideo:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, textarea:focus{
+	/* a esos campos les añadimos un efecto de cambio de color cuando toman el foco */ 
+	background-color:#FFF !important;
+	border-color:#246280 !important;
+}
+input[type=submit], .button.file-selector{
+	/* Reformateamos los botones de enviar formularios y de subir videos */
+	border-radius: 0 !important;
+	background:#246280 !important;
+	color:#FFF !important;
+	border:2px solid #246280 !important;
+	box-shadow:none !important;
+	padding:5px 12px !important;
+}
+.wpuf-post-form input[type="submit"]:active, .wpuf-submit:active, .wpuf-button:active {
+	/* En "Editar video", si pulsamos el botón "update" aparece una franja gris. Esto es para quitarla */
+	background: none transparent;
+}
+#tabs nav ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 6px;
+  background: none repeat scroll 0 0 #FFF;
+  border-left:1px solid #246280;
+  border-right:1px solid #246280;
+  border-bottom:1px solid #246280;
+  font-size:18px;
+}
+#tabs nav ul li.tab-current {
+  background: none repeat scroll 0 0 #246280;
+  border-bottom:1px solid #246280;
+  z-index: 100;
+}
+#tabs nav ul li a{
+  color:#AAA !important;
+  outline:none;
+}
+#tabs nav ul li.tab-current a{
+  color:#FFF !important;
+  /*text-decoration:underline;*/
+}
+
+/* Formulario de contacto */
+
+/* ============================================================================================== */
+
+
+
+/* ============================================================================================== */
+/* PANEL LATERAL */
+/* Los encabezados de los paneles los trato de forma individual por si se quiere darles distintos
+colores a cada uno */
+/* ============================================================================================== */
+.makusi_user_info p.welcome, .makusi_user_info_mini p.welcome{
+	font-size:14px;
+        margin-bottom:10px;
+}
+.table.user-info-widget{
+	font-size:14px;
+}
+.panel-warning > .panel-heading {
+	/* Es el encabezado por defecto de los paneles laterales. El panel del autor del vídeo no
+	tiene un marcado específico, a diferencia de los otros tres, por lo que tirará de esto */
+	background-color: #6EA9C5;
+	color: #FFF;
+	border-bottom:5px solid #246280;
+}
+div#text_icl-4.widget-item.widget_text_icl.panel.panel-warning div.widget-title.panel-heading{
+	/* Suscripción y tarifas */
+	background-color: #6EA9C5; color: #FFF; border-bottom:5px solid #246280;
+}
+div#text_icl-3.widget-item.widget_text_icl.panel.panel-warning div.widget-title.panel-heading{
+	/* Encabezado del panel ¿Qué es Makusi.tv? */
+	background-color: #6EA9C5; color: #FFF; border-bottom:5px solid #246280;
+}
+div#latest_tweets_widget-3.widget-item.widget_latest_tweets_widget.panel.panel-warning div.widget-title.panel-heading{
+	/* Últimos tweets */
+	background-color: #6EA9C5; color: #FFF; border-bottom:5px solid #246280;
+}
+.textwidget, .textwidget *, p.tweet-text, p.tweet-details, .tweet-text a, .tweet-details a{
+	font-size:14px !important;
+}
+.textwidget a{
+	background-color:#C2E1EF; padding:3px; display:inline-block; width:100%; text-align:center;
+}
+.textwidget a:hover{
+	background-color:#246280; color:#FFF;
+}
+.tweet-text a:hover, .tweet-details a:hover{
+	color: #6EA9C5 !important;
+}
+.textwidget, .latest-tweets ul li{
+	background-color:#FFF; -webkit-transition: background-color 0.5s; transition: background-color 0.5s;
+}
+.textwidget:hover, .latest-tweets ul li:hover{
+	background-color:#F5F5F5; /* gris: F5F5F5, amarillo: FFF6DF */
+}
+/* ============================================================================================== */
+
+
+
+/* ============================================================================================== */
+/* FOOTER */
+/* ============================================================================================== */
+footer div.textwidget{
+	background-color:transparent !important;
+}
+footer div.container *{
+	font-size:14px;
+}
+footer div.container a:hover{
+	color:#6EA9C5 !important;
+}
+/* ============================================================================================== */
+
+
+
+/* ============================================================================================== */
+/* REGLAS PARA PÁGINAS ESPECÍFICAS */
+/* ============================================================================================== */
+/* PÁGINA DE EDICIÓN DE VIDEO */
+div.image-wrap.thumbnail{
+	border-radius:0;
+	border:none;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+}
+div.image-wrap.thumbnail div.caption a{
+	border-radius:0 !important;
+	color:#FFF !important;
+}
+/* ============================================================================================== */
+
+
+
+/* ============================================================================================== */
+/* NOTIFICACIÓN DE COOKIES */
+/* ============================================================================================== */
+#cookie-notice{
+	/* position:inherit !important; */
+	position:fixed !important;
+	top:inherit !important; width:100% !important;
+	right:0 !important; bottom:0 !important;
+	/* width:auto !important; */
+}
+/* ============================================================================================== */
+
+
+
+/* ============================================================================================== */
+/* MENÚ DE IDIOMAS */
+/* ============================================================================================== */
+.language-wrapper{
+	text-align:left;
+}
+.language-wrapper *{
+	border-radius:0;
+}
+.language-wrapper button{
+	border-color:transparent !important;
+	border-bottom: none;
+}
+.language-wrapper li{
+	padding-left:0;
+}
+.language-area ul {
+  padding: 0;
+  width: 100px;
+  position:relative;
+  top:0;
+}
+.language-area ul li{
+	display:inherit;
+	padding:0;
+	background: none !important;
+}
+.language-area ul li a {
+  color: #666;
+  font-family: inherit;
+  font-size: inherit; /* 1em */
+}
+.language-area ul li.active a {
+  display: inherit;
+  color: inherit;
+  padding-right: inherit;
+}
+/* ============================================================================================== */
+
+
+
+/* ============================================================================================== */
+/* ESTILOS VARIOS */
+/* ============================================================================================== */
+div#video_controls_bar{
+	z-index: 2147483647;
+}
+#close-invite{
+	/* El botón para cerrar el área de invitación lo ponemos en el lado izquierdo */
+	z-index:8000; right:auto; left:15px;
+}
+
+/* ============================================================================================== */
+
+
+
+/* ============================================================================================== */
+/* CAMBIO DE COLORES 
+Estos estilos son para poder hacer un cambio rápido de color en toda la web
+
+							Tono original		Tono nuevo
+------------------------------------------------------------------------------
+tono oscuro					#246280				#80244E
+tono medio	 				#6EA9C5				#E43B80
+tono claro					#c2e1ef				#EFC2D5
+------------------------------------------------------------------------------
+*/
+
+/* COLOR DE TEXTO OSCURO ----------------------------------------------------------------- */
+.content h1, .content-single h1, .content_author h1, .entry-content h1, 
+.content h2, .content-single h2, .content_author h2, .entry-content h2,
+.content a:hover, .content-single a:hover, .content_author a:hover, .entry-content a:hover
+{
+	color:#80244E !important;
+}
+/* --------------------------------------------------------------------------------------- */
+
+/* COLOR DE TEXTO MEDIO ------------------------------------------------------------------ */
+.content a, .content-single a, .content_author a, .entry-content a,
+.tweet-text a:hover, .tweet-details a:hover,
+footer div.container a:hover,
+a
+{
+	/*color:#E43B80 !important;*/
+        color:#80244E !important;
+}
+/* --------------------------------------------------------------------------------------- */
+
+/* COLOR DE TEXTO BLANCO ----------------------------------------------------------------- */
+.upload-link-wrapper a, .register-link-wrapper a, .login-link-wrapper a,
+#cookie-notice .button.bootstrap,
+h6.layout-title a:hover,
+.social_menu ul li a:hover,
+a.btn-primary,
+.video_feature_item:hover a,
+.textwidget a:hover,
+.single-tags ul li a:hover
+{
+	color:#FFF !important;
+}
+/* --------------------------------------------------------------------------------------- */
+
+
+
+/* COLOR DE FONDO OSCURO ----------------------------------------------------------------- */
+
+.single-tags ul li a:hover,
+.social_menu ul li a:hover,
+a.btn-primary:hover
+{
+	
+        background-color:#E43B80 !important;
+}
+/* --------------------------------------------------------------------------------------- */
+
+/* COLOR DE FONDO MEDIO ------------------------------------------------------------------ */
+
+.makusi_user_info, .makusi_user_info_mini{
+    background-color:#F2B0CE !important;
+    color: #80244E !important;
+}
+.makusi_user_info a, .user-info-icons a,.makusi_user_info_mini a{
+    color: #770438 !important;
+}
+.makusi_user_info a:hover, .user-info-icons a:hover, .makusi_user_info_mini a:hover{
+    color: #E43B80 !important;
+}
+.header,.textwidget a:hover, .page-numbers.current, input[type=submit], .button.file-selector,
+#tabs nav ul li.tab-current, input[type=submit], .button.file-selector, .upload-link-wrapper:hover, .register-link-wrapper:hover, .login-link-wrapper:hover,
+a.btn-primary, .panel-warning > .panel-heading,
+div#text_icl-4.widget-item.widget_text_icl.panel.panel-warning div.widget-title.panel-heading,
+div#text_icl-3.widget-item.widget_text_icl.panel.panel-warning div.widget-title.panel-heading,
+div#latest_tweets_widget-3.widget-item.widget_latest_tweets_widget.panel.panel-warning div.widget-title.panel-heading,
+.video_latest_item:hover h6, .video_feature_item:hover h6, .video_latest_archive_item:hover h6
+{
+	background-color:#80244E !important;
+}
+/* --------------------------------------------------------------------------------------- */
+
+/* COLOR DE FONDO CLARO ------------------------------------------------------------------ */
+.textwidget a
+{
+	background-color:#EFC2D5 !important;
+}
+/* --------------------------------------------------------------------------------------- */
+
+
+
+/* COLOR DE BORDE OSCURO ----------------------------------------------------------------- */
+
+.searchvideo:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, textarea:focus,
+input[type=submit], .button.file-selector,
+#tabs nav ul li,
+a.btn-primary,
+#tabs
+{
+	border-color:#80244E !important;
+}
+/* --------------------------------------------------------------------------------------- */
+
+/* COLOR DE BORDE MEDIO ------------------------------------------------------------------ */
+
+.searchvideo, input[type=text], input[type=password], input[type=email], textarea
+{
+	/*border-color:#E43B80 !important;*/
+        border-color:#80244E !important;
+}
+
+.panel-warning > .panel-heading, div#text_icl-4.widget-item.widget_text_icl.panel.panel-warning div.widget-title.panel-heading,
+div#text_icl-3.widget-item.widget_text_icl.panel.panel-warning div.widget-title.panel-heading,
+div#latest_tweets_widget-3.widget-item.widget_latest_tweets_widget.panel.panel-warning div.widget-title.panel-heading{
+    border-color:#E43B80 !important;
+}
+/* --------------------------------------------------------------------------------------- */
+
+/* ============================================================================================== */
+
+
+
+.video_tag_item:hover a{
+	color:white !important;
+}
+
+.field_missing{
+    background-color: #f2b0ce !important;
+}
+

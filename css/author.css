@@ -1,0 +1,68 @@
+.content_author {
+    background:white;
+    margin-bottom: 20px;
+    padding-top:10px;
+}
+
+.content_author .avatar{
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+.content_author .gravatar-notice{
+    font-size:1em;
+}
+.author_info h3{
+    padding-top:0;
+    margin-top:0;
+    margin-bottom:0px;
+}
+#adduser > div{
+    margin-bottom:4px;
+}
+#adduser div label{
+    padding-left: 0;
+}
+
+.author_info{
+    margin-bottom:20px;
+}
+.author-side{
+    padding-top:0;
+}
+
+.author_registered{
+    font-size:10px;
+    color:#aaa;
+    margin-bottom:4px;
+}
+
+.author_avatar{
+    padding-left:0;
+}
+
+.video_user_item{
+    float:left;
+    /*width:180px;*/
+    margin-right:20px;
+}
+
+.video_user_item img{
+    width:100%;
+    height:auto;
+}
+
+#adduser label{
+    padding-top:5px;
+    font-size:1em;
+}
+
+#open-gravatar-dialog{
+    display:inline-block;
+    width:19px;
+    height:19px;
+    border:1px solid #eee;
+    background:#f3f3f3;
+    border-radius: 10px;
+    text-align:center;
+}

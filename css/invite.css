@@ -1,0 +1,439 @@
+.blue-background-wrapper{
+    width:100%;
+    //background: white url('../images/backgrounds/ganza1.jpg') no-repeat 50% 50%/100% auto;
+    color:white;
+}
+
+.invite-container{
+    width:100%;
+    color:white;
+}
+
+.invite-left{
+    padding-left:30px;
+    margin-left:110px;
+    margin-top:35px;
+    padding-top:20px !important;
+    z-index:4;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+}
+.invite-left ul{
+    margin-bottom:3px;
+}
+.invite-left p{
+    margin-bottom:22px;
+}
+.invite-right{
+    position:relative;
+    z-index:4;
+}
+.invite-left, .invite-right{
+    padding-top:35px;
+    padding-bottom:25px;
+}
+
+.invite-right{
+    padding-right:80px;
+}
+
+.invite-right h1, .invite-left h1{
+    color:white;
+    font-family:'Open Sans', arial, sans-serif;
+    font-weight:lighter;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+    margin-top:0;
+}
+
+.invite-right p{
+    color:white;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+
+.invite-left, .invite-left p, .invite-left ul li{
+    color:white;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+    font-size:1.2em;
+}
+.invite-left p {
+    font-size:1.4em;
+}
+.invite-row{
+    margin-bottom:20px;
+    height:40px;
+}
+.feature-list{
+    color: #fff;
+}
+
+.feature-list li{
+    list-style: none;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    height: 40px;
+    line-height: 40px;
+    margin: 14px 0;
+    padding-left: 0px;
+}
+.feature-list li a{
+    font-weight:600;
+}
+.feature-list li.autonomia_digital{
+    background: transparent url('../images/autonomiadigital.png') no-repeat;
+}
+.feature-list li.noads{
+    background: transparent url('../images/noads.png') no-repeat;
+}
+.feature-list li.workers{
+    background: transparent url('../images/workers.png') no-repeat;
+}
+.feature-list li.creativecommons{
+    background: transparent url('../images/creativecommons.png') no-repeat;
+}
+
+#open-invite{
+    color:white;
+    font-size:0.8em;
+    padding-top:40px;
+    display:none;
+    display:inline-block;
+}
+
+#invite-login, #invite-subscriptions, #invite-security{
+    display:none;
+}
+
+#invite-login h3{
+    padding-top:5px;
+    margin-bottom:10px;
+}
+
+#invite-subscriptions label{
+    font-weight:700 !important;
+}
+
+#close-invite{
+    position:absolute;
+    top:15px;
+    right:15px;
+}
+
+.invite-container{
+    position:relative;
+    min-height:450px;
+}
+
+.invite-block-wrapper{
+    background:rgba(0,0,0,0.8);
+    min-height:540px;
+    width:100%;
+    /*height:370px;*/
+    overflow:hidden;
+    position:relative;
+}
+
+.invite-block {
+    width:100%;
+    padding:20px;
+    min-height:540px;
+    overflow:hidden;
+    position:relative;
+}
+
+.invite-block a#open-subscription-dialog{
+    color:#357ebd;
+}
+
+#register-wrap{
+    width:100%;
+    float:left;
+    position:relative;
+}
+
+#invite-subscriptions p a, #invite-security p a, #invite-security a{
+    color:#6EA9C5;
+    text-decoration:none;
+}
+
+
+#invite-subscriptions p a:hover, #invite-security p a:hover, #invite-security a:hover{
+    color:#ededed;
+    text-decoration:underline;
+}
+.recaptcha_only_if_image{
+    line-height:1.4em;
+}
+.invite-container #register{
+    font-size:1.6em;
+}
+
+.invite-container .user-input{
+    font-size:1.4em;
+    font-weight:600;
+    color:#375663;
+}
+
+#trigger_register{
+    float:right;
+    text-transform:uppercase;
+}
+
+.input-register-firstname{
+    width:46% !important;
+    float:left;
+    margin-right:20px !important;
+    margin-bottom: 20px !important;
+}
+.input-register-lastname{
+    width:48% !important;
+    float:left;
+    margin-bottom: 20px !important;
+}
+.input-register-username{
+    width:36% !important;
+    float:left;
+    margin-right:20px !important;
+    margin-bottom: 20px !important;
+}
+.input-register-email{
+    width:58% !important;
+    float:left;
+    margin-bottom: 20px !important;
+}
+.input-register-password{
+    width:46% !important;
+    float:left;
+    margin-right:20px !important;
+    margin-bottom: 20px !important;
+}
+.input-register-password2{
+    width:48% !important;
+    float:left;
+    margin-bottom: 20px !important;
+}
+
+#change-to-subscription, #change-to-security{
+    float:right;
+    /*font-weight:bold;*/
+    border-radius:0px !important;
+}
+
+#change-to-register, #change-back-to-security, #change-back-to-subscriptions{
+    /*font-weight:bold;*/
+    padding-top:5px;
+    border-radius:0px !important;
+}
+
+.login-wizzard{
+    width:400px;
+    position:absolute;
+    top:35px;
+    right:-350px;
+    height:30px;
+    
+}
+
+.wizzard-block{
+    height:30px;
+    font-size:1.1em;
+    font-weight:400;
+    display:inline-block;
+    background-color:rgba(0, 0, 0, 0.6);
+    text-align:center;
+    padding-left:15px;
+    padding-right:15px;
+    margin-bottom:10px;
+    padding-top:4px;
+}
+
+.wizzard-block a{
+    color:white !important;
+    text-shadow: 0 0 3px #666;
+}
+
+.wizzard-block a:hover{
+    color:#9cbdd3;
+}
+
+#wizzard-register{
+    
+}
+
+#wizzard-subscription{
+    
+}
+
+#wizzard-security{
+
+}
+
+#wizzard-login{
+
+}
+.wizzard-active{
+    background-color:rgba(0, 0, 0, 0.8) !important;
+    font-weight:700;
+}
+
+#register-warning{
+    margin-right:18px;
+    margin-bottom:20px;
+    position:absolute;
+    z-index:20;
+    width:360px;
+    top:20px;
+    left:20px;
+}
+#invite-subscriptions-wrapper{
+    position:relative;
+}
+#invite-subscriptions-wrapper #register-warning{
+    position:absolute;
+    top:0;
+    width:100%;
+    left:0;
+    height:100%;
+}
+
+.widget-register-error{
+    border:4px solid #EDA19E;
+    position:relative;
+    font-weight:bold;
+}
+
+#close-error-warning{
+    position:absolute;
+    display:block;
+    width:20px;
+    height:20px;
+    top:5px;
+    right:5px;
+}
+
+/*label {  
+    display: inline-block;  
+    cursor: pointer;  
+    position: relative;  
+    padding-left: 25px;  
+    margin-right: 15px;  
+    font-size: 13px;  
+}  
+    
+input[type=radio] {  
+    display: none;  
+} 
+    
+label:before {  
+    content: "";  
+    display: inline-block;
+    width: 16px;  
+    height: 16px;  
+    margin-right: 10px;  
+    position: absolute;  
+    left: 0;  
+    bottom: 1px;  
+    background-color: #aaa;  
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);  
+}
+    
+.radio label:before {  
+    border-radius: 8px;  
+}
+    
+input[type=radio]:checked + label:before {  
+    content: "\2022" !important;  
+    color: #f3f3f3 !important;  
+    font-size: 30px;  
+    text-align: center;  
+    line-height: 18px;  
+}   */
+
+.radio{
+    position:relative;
+    padding-left:0;
+    margin-right:15px;
+}
+
+.radio span{
+	position: absolute;
+	right: 0;
+	width: 35px;
+	height: 22px;
+	line-height: 18px;
+	padding: 3px;
+        padding-bottom:8px;
+        padding-top:0;
+	color: #FFF;
+	text-align: center;
+	/*background: #1A2634;
+        border-radius:3px;
+        border:1px solid #6EA9C5;
+        font-size:1.2em;*/
+}
+ 
+.radio span:after{
+	content: url("../images/no.png"); /*if CSS is disabled span elements are not displayed*/
+}
+ 
+.radio input{
+	position: absolute;
+	right: 0;
+	margin: 0;
+	width: 31px;
+	height: 31px;
+	/*hide the radio button*/
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity: 0;
+	opacity: 0;
+        cursor: pointer;
+}
+ 
+.radio input[type="radio"] + span{ /*the span element that immediately follow the radio button */
+	visibility: hidden; /*temporarily hide the "YES" label*/
+	/*background: #81B0C7;*/
+}
+ 
+.radio input[type="radio"] + span:after{
+	content: url("../images/yes.png");
+        font-weight:bold;
+}
+
+.radio input[type="radio"]:checked + span{
+	visibility: visible; /*show the "YES" label only if the radio button is checked*/
+}
+
+#rememberme{
+    margin-right:5px;
+}
+
+#recaptcha_widget .user-input {
+    background: none repeat scroll 0 0 rgba(237, 240, 242, 0.8);
+    border: 5px solid #9cbdd3;
+    margin: 0 0 10px;
+    outline: medium none;
+    padding: 8px;
+    width: 100%;
+}
+
+#recaptcha_image {
+    margin:5px auto;
+}
+
+#recaptcha_image img{
+    border: 5px solid #9cbdd3;
+}
+
+.recaptcha_only_if_image,.recaptcha_only_if_audio {
+    font-size:1em;
+}
+
+.widget-register-success span, .widget-register-error span{
+    font-size:2em;
+}
+
+#loginform{
+    margin-bottom:6px;
+}
+.package-line{
+    margin-bottom:10px;
+}

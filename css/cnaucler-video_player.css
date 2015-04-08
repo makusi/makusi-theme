@@ -1,0 +1,96 @@
+/* ============================================================================================== */
+/* CONTROLES DEL VIDEO PLAYER */
+/* ============================================================================================== */
+
+/* Contenedor del video y controles */
+div#video-container{
+    width:100%;
+    background: #000;
+    margin:0 auto;
+    position:relative;
+}
+
+/* Contenedor de los controles */
+div#video_controls_bar{
+    background: rgba(40,40,40,0.8);
+    padding:10px;
+    color:#ccc;
+    font-family:"Open Sans", sans-serif;
+    font-size:0.8em;
+    position:absolute;
+    width:93%;
+    bottom:3%;
+    left:4%;
+    margin:0 auto;
+    display:none;
+}
+
+/* Esta clase se le aplica al contenedor cuando estamos en fullscreen. Si no, se le quita */
+.fullscreenControls{
+    z-index: 2147483647;
+	position:fixed !important;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+/* Color de los iconos de los controles */
+div#video_controls_bar i.fa{
+    color: #6ea9c5;
+}
+
+/* Clases para el slider del video */
+input#seekslider {
+    width:60% !important;
+}
+
+/* Clases para el slider del volumen */
+input#volumeslider {
+    width:10% !important;
+}
+input[type="range"]{
+    -webkit-appearance:none;
+    background: transparent;
+    height: 4px;
+    float:left;
+    margin-right:15px;
+    padding-top:12px;
+    color: #6ea9c5;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none !important;
+    color: #6ea9c5;
+    height:10px;
+    width:10px;
+    border-radius:100%;
+    cursor:pointer;
+}
+
+/* Clases para el botón play/pause */
+button#playpausebtn{
+    //background:url('pause.png');
+    border:none;
+    width:16px;
+    height:18px;
+    cursor:pointer;
+    opacity:0.5;
+    float:left;
+    margin-right:15px;
+    background:transparent !important;
+}
+button#playpausebtn:hover{
+    opacity:1;
+}
+
+/* Clases para los botones de silenciar y fullscreen */
+#mutebtn, #fullscreenbtn{
+    background:transparent;
+    border: none;
+}
+
+/* Clases para los subtítulos? */
+div#video track{
+    font-size:1.2em;
+    text-align:center;
+}
+

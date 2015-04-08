@@ -1,0 +1,22 @@
+.category-container{
+    background:white;
+    margin-bottom:20px;
+}
+
+.category-container h2{
+    margin-top:10px;
+}
+
+.category-container .video_category_item{
+    margin-bottom:30px;
+}
+
+.video_category_item .stats, .video_category_item .stats li {
+    margin-left:0;
+    padding-left:0;
+}
+
+.video_category_item h3.layout-title{
+    font-size:1.5em;
+    font-weight:normal !important;
+}
